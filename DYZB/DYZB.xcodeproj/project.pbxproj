@@ -15,6 +15,7 @@
 		5201E30126633497009D874E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5201E2FF26633497009D874E /* LaunchScreen.storyboard */; };
 		5201E30C26633497009D874E /* DYZBTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5201E30B26633497009D874E /* DYZBTests.swift */; };
 		5201E31726633497009D874E /* DYZBUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5201E31626633497009D874E /* DYZBUITests.swift */; };
+		5201E3252663853D009D874E /* Classes in Resources */ = {isa = PBXBuildFile; fileRef = 5201E3242663853D009D874E /* Classes */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		5201E31226633497009D874E /* DYZBUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DYZBUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5201E31626633497009D874E /* DYZBUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DYZBUITests.swift; sourceTree = "<group>"; };
 		5201E31826633497009D874E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5201E3242663853D009D874E /* Classes */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Classes; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 		5201E2F32663348F009D874E /* DYZB */ = {
 			isa = PBXGroup;
 			children = (
+				5201E3242663853D009D874E /* Classes */,
 				5201E2F42663348F009D874E /* AppDelegate.swift */,
 				5201E2F62663348F009D874E /* SceneDelegate.swift */,
 				5201E2F82663348F009D874E /* ViewController.swift */,
@@ -232,6 +235,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5201E30126633497009D874E /* LaunchScreen.storyboard in Resources */,
+				5201E3252663853D009D874E /* Classes in Resources */,
 				5201E2FE26633497009D874E /* Assets.xcassets in Resources */,
 				5201E2FC2663348F009D874E /* Main.storyboard in Resources */,
 			);
