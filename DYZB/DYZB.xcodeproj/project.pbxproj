@@ -15,7 +15,9 @@
 		5201E30126633497009D874E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5201E2FF26633497009D874E /* LaunchScreen.storyboard */; };
 		5201E30C26633497009D874E /* DYZBTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5201E30B26633497009D874E /* DYZBTests.swift */; };
 		5201E31726633497009D874E /* DYZBUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5201E31626633497009D874E /* DYZBUITests.swift */; };
-		5201E3252663853D009D874E /* Classes in Resources */ = {isa = PBXBuildFile; fileRef = 5201E3242663853D009D874E /* Classes */; };
+		5208188E26651D6E00BCC909 /* github命令使用.md in Resources */ = {isa = PBXBuildFile; fileRef = 5208188D26651D6E00BCC909 /* github命令使用.md */; };
+		5208189026651D8800BCC909 /* APP框架记录.md in Resources */ = {isa = PBXBuildFile; fileRef = 5208188F26651D8800BCC909 /* APP框架记录.md */; };
+		5208189226651D9100BCC909 /* 获取斗鱼IPA图片资源.md in Resources */ = {isa = PBXBuildFile; fileRef = 5208189126651D9100BCC909 /* 获取斗鱼IPA图片资源.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,7 +52,9 @@
 		5201E31226633497009D874E /* DYZBUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DYZBUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5201E31626633497009D874E /* DYZBUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DYZBUITests.swift; sourceTree = "<group>"; };
 		5201E31826633497009D874E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5201E3242663853D009D874E /* Classes */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Classes; sourceTree = "<group>"; };
+		5208188D26651D6E00BCC909 /* github命令使用.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = "github命令使用.md"; sourceTree = SOURCE_ROOT; };
+		5208188F26651D8800BCC909 /* APP框架记录.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = "APP框架记录.md"; sourceTree = SOURCE_ROOT; };
+		5208189126651D9100BCC909 /* 获取斗鱼IPA图片资源.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = "获取斗鱼IPA图片资源.md"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,11 +105,14 @@
 		5201E2F32663348F009D874E /* DYZB */ = {
 			isa = PBXGroup;
 			children = (
-				5201E3242663853D009D874E /* Classes */,
+				5208188726651B9900BCC909 /* Classes */,
 				5201E2F42663348F009D874E /* AppDelegate.swift */,
 				5201E2F62663348F009D874E /* SceneDelegate.swift */,
 				5201E2F82663348F009D874E /* ViewController.swift */,
 				5201E2FA2663348F009D874E /* Main.storyboard */,
+				5208189126651D9100BCC909 /* 获取斗鱼IPA图片资源.md */,
+				5208188F26651D8800BCC909 /* APP框架记录.md */,
+				5208188D26651D6E00BCC909 /* github命令使用.md */,
 				5201E2FD26633497009D874E /* Assets.xcassets */,
 				5201E2FF26633497009D874E /* LaunchScreen.storyboard */,
 				5201E30226633497009D874E /* Info.plist */,
@@ -129,6 +136,53 @@
 				5201E31826633497009D874E /* Info.plist */,
 			);
 			path = DYZBUITests;
+			sourceTree = "<group>";
+		};
+		5208188726651B9900BCC909 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				5208188C26651C7600BCC909 /* Room */,
+				5208188B26651BD300BCC909 /* Profile */,
+				5208188A26651BC900BCC909 /* Live */,
+				5208188926651BC100BCC909 /* Home */,
+				5208188826651BB900BCC909 /* Main */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		5208188826651BB900BCC909 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		5208188926651BC100BCC909 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		5208188A26651BC900BCC909 /* Live */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Live;
+			sourceTree = "<group>";
+		};
+		5208188B26651BD300BCC909 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		5208188C26651C7600BCC909 /* Room */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Room;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -235,9 +289,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				5201E30126633497009D874E /* LaunchScreen.storyboard in Resources */,
-				5201E3252663853D009D874E /* Classes in Resources */,
+				5208189026651D8800BCC909 /* APP框架记录.md in Resources */,
 				5201E2FE26633497009D874E /* Assets.xcassets in Resources */,
 				5201E2FC2663348F009D874E /* Main.storyboard in Resources */,
+				5208189226651D9100BCC909 /* 获取斗鱼IPA图片资源.md in Resources */,
+				5208188E26651D6E00BCC909 /* github命令使用.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -447,7 +503,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.further.DYZB.DYZB;
+				PRODUCT_BUNDLE_IDENTIFIER = com.further.DYZB;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -466,7 +522,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.further.DYZB.DYZB;
+				PRODUCT_BUNDLE_IDENTIFIER = com.further.DYZB;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
