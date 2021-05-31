@@ -1,0 +1,17 @@
+1.app框架
+1.0 创建默认工程的Main.storyboard只有一个ViewController,删除后，从控制库中拖一个TabBarController进来。然后在属性页中设置TabBarController is Initial View Controller前面打勾。
+Main.storyboard一个主TabBarController带四个NavigationController
+1.1 TabBarController只有两个ViewController,我们需要每一个TabBar都需要一个NavigationController两导航，所以用以下方法增加NavigationController。分别选中 TabBarController的右边Item1、Item2后，在xcode菜单栏
+Editor->Embedin->Navigation Controller分别添加两个默认的，其它两个则复制即可。
+1.2为新添加的两个Navigation Controller添加与TabBarController关联，点选TabBarController右键->ViewController-Item拖线连接到Navigation Controller即可。
+1.3在属性页配置页中，分别为每个TabBar Item添加文字与图片
+添加完图片之后，图片是橙色的，但是显示出来是蓝色的。则需要在 UIApplicationDelegate中添加 UITabBar.appearance().tintColor = UIColor.orange
+
+1.4 IOS9.0 以上才支持 Refactor to StoryBoard方法 如果Main.stroyBoard太多控制器，会显得不好管理，则把他们进一步分离，方法如下：
+同时选择上NavigationController与它对应的ViewController ，然后在菜单栏Editor->Refactor to Storyboard,生成一个新的StoryBoard.
+同样的方法生成另外三个StoryBoard
+为了适应 9.0以下的系统 ，则生成上面4个StoryBoard后，删除
+
+
+
+2.添加图片包，点击Assets.xcassets资源文件夹后，从示例工程中直接把图片文件夹拖进来，如Tabbar里面的图片
