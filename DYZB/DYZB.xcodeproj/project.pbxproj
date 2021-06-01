@@ -153,6 +153,11 @@
 		52FC856F266672390083B06C /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				52FC8584266677B00083B06C /* Follow */,
+				52FC8585266677B00083B06C /* Home */,
+				52FC8583266677B00083B06C /* Live */,
+				52FC8586266677B00083B06C /* Profile */,
+				52FC8587266677B00083B06C /* Tools */,
 				52FC8582266676E70083B06C /* Main */,
 			);
 			path = Classes;
@@ -163,6 +168,41 @@
 			children = (
 			);
 			path = Main;
+			sourceTree = "<group>";
+		};
+		52FC8583266677B00083B06C /* Live */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Live;
+			sourceTree = "<group>";
+		};
+		52FC8584266677B00083B06C /* Follow */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Follow;
+			sourceTree = "<group>";
+		};
+		52FC8585266677B00083B06C /* Home */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		52FC8586266677B00083B06C /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		52FC8587266677B00083B06C /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Tools;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
