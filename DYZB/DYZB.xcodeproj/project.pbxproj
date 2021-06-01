@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		5201E2F52663348F009D874E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5201E2F42663348F009D874E /* AppDelegate.swift */; };
 		5201E2F72663348F009D874E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5201E2F62663348F009D874E /* SceneDelegate.swift */; };
-		5201E2F92663348F009D874E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5201E2F82663348F009D874E /* ViewController.swift */; };
 		5201E2FC2663348F009D874E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5201E2FA2663348F009D874E /* Main.storyboard */; };
 		5201E2FE26633497009D874E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5201E2FD26633497009D874E /* Assets.xcassets */; };
 		5201E30126633497009D874E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5201E2FF26633497009D874E /* LaunchScreen.storyboard */; };
@@ -46,7 +45,6 @@
 		5201E2F12663348F009D874E /* DYZB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DYZB.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5201E2F42663348F009D874E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5201E2F62663348F009D874E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		5201E2F82663348F009D874E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		5201E2FB2663348F009D874E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5201E2FD26633497009D874E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5201E30026633497009D874E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -122,7 +120,6 @@
 				52FC858826667B410083B06C /* Classes */,
 				5201E2F42663348F009D874E /* AppDelegate.swift */,
 				5201E2F62663348F009D874E /* SceneDelegate.swift */,
-				5201E2F82663348F009D874E /* ViewController.swift */,
 				5201E2FA2663348F009D874E /* Main.storyboard */,
 				5208189126651D9100BCC909 /* 获取斗鱼IPA图片资源.md */,
 				5208188F26651D8800BCC909 /* APP框架记录.md */,
@@ -337,7 +334,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5201E2F92663348F009D874E /* ViewController.swift in Sources */,
 				5201E2F52663348F009D874E /* AppDelegate.swift in Sources */,
 				5201E2F72663348F009D874E /* SceneDelegate.swift in Sources */,
 				52FC859126667FE80083B06C /* MainViewController.swift in Sources */,

@@ -12,6 +12,7 @@ Editor->Embedin->Navigation Controller分别添加两个默认的，其它两个
 同样的方法生成另外三个StoryBoard,保存路径为：Base.lproj文件夹中
 为了适应 9.0以下的系统 ，则生成上面4个StoryBoard后.要使用代码来加载。
 
+新创建一个 MainViewController 继承 UITabBarController，然后选择 Main.storyboard里面的 Main View Controller 关联这个 MainViewController类即可。
 
 
 
