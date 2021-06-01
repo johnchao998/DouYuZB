@@ -18,6 +18,10 @@
 		5208188E26651D6E00BCC909 /* github命令使用.md in Resources */ = {isa = PBXBuildFile; fileRef = 5208188D26651D6E00BCC909 /* github命令使用.md */; };
 		5208189026651D8800BCC909 /* APP框架记录.md in Resources */ = {isa = PBXBuildFile; fileRef = 5208188F26651D8800BCC909 /* APP框架记录.md */; };
 		5208189226651D9100BCC909 /* 获取斗鱼IPA图片资源.md in Resources */ = {isa = PBXBuildFile; fileRef = 5208189126651D9100BCC909 /* 获取斗鱼IPA图片资源.md */; };
+		52FC8578266672BB0083B06C /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52FC8576266672BB0083B06C /* Home.storyboard */; };
+		52FC857B2666730A0083B06C /* Live.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52FC85792666730A0083B06C /* Live.storyboard */; };
+		52FC857E266673280083B06C /* Follow.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52FC857C266673280083B06C /* Follow.storyboard */; };
+		52FC8581266673B30083B06C /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52FC857F266673B30083B06C /* Profile.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +59,10 @@
 		5208188D26651D6E00BCC909 /* github命令使用.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = "github命令使用.md"; sourceTree = SOURCE_ROOT; };
 		5208188F26651D8800BCC909 /* APP框架记录.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = "APP框架记录.md"; sourceTree = SOURCE_ROOT; };
 		5208189126651D9100BCC909 /* 获取斗鱼IPA图片资源.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = "获取斗鱼IPA图片资源.md"; sourceTree = SOURCE_ROOT; };
+		52FC8577266672BB0083B06C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = DYZB/Base.lproj/Home.storyboard; sourceTree = "<group>"; };
+		52FC857A2666730A0083B06C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = DYZB/Base.lproj/Live.storyboard; sourceTree = "<group>"; };
+		52FC857D266673280083B06C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = DYZB/Base.lproj/Follow.storyboard; sourceTree = "<group>"; };
+		52FC8580266673B30083B06C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = DYZB/Base.lproj/Profile.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +93,10 @@
 		5201E2E82663348F009D874E = {
 			isa = PBXGroup;
 			children = (
+				52FC857F266673B30083B06C /* Profile.storyboard */,
+				52FC857C266673280083B06C /* Follow.storyboard */,
+				52FC85792666730A0083B06C /* Live.storyboard */,
+				52FC8576266672BB0083B06C /* Home.storyboard */,
 				5201E2F32663348F009D874E /* DYZB */,
 				5201E30A26633497009D874E /* DYZBTests */,
 				5201E31526633497009D874E /* DYZBUITests */,
@@ -105,7 +117,7 @@
 		5201E2F32663348F009D874E /* DYZB */ = {
 			isa = PBXGroup;
 			children = (
-				5208188726651B9900BCC909 /* Classes */,
+				52FC856F266672390083B06C /* Classes */,
 				5201E2F42663348F009D874E /* AppDelegate.swift */,
 				5201E2F62663348F009D874E /* SceneDelegate.swift */,
 				5201E2F82663348F009D874E /* ViewController.swift */,
@@ -138,51 +150,59 @@
 			path = DYZBUITests;
 			sourceTree = "<group>";
 		};
-		5208188726651B9900BCC909 /* Classes */ = {
+		52FC856F266672390083B06C /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				5208188C26651C7600BCC909 /* Room */,
-				5208188B26651BD300BCC909 /* Profile */,
-				5208188A26651BC900BCC909 /* Live */,
-				5208188926651BC100BCC909 /* Home */,
-				5208188826651BB900BCC909 /* Main */,
+				52FC8570266672390083B06C /* Home */,
+				52FC8571266672390083B06C /* Tools */,
+				52FC8572266672390083B06C /* Follow */,
+				52FC8573266672390083B06C /* Profile */,
+				52FC8574266672390083B06C /* Live */,
+				52FC8575266672390083B06C /* Main */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
 		};
-		5208188826651BB900BCC909 /* Main */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Main;
-			sourceTree = "<group>";
-		};
-		5208188926651BC100BCC909 /* Home */ = {
+		52FC8570266672390083B06C /* Home */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			path = Home;
 			sourceTree = "<group>";
 		};
-		5208188A26651BC900BCC909 /* Live */ = {
+		52FC8571266672390083B06C /* Tools */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			path = Live;
+			path = Tools;
 			sourceTree = "<group>";
 		};
-		5208188B26651BD300BCC909 /* Profile */ = {
+		52FC8572266672390083B06C /* Follow */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Follow;
+			sourceTree = "<group>";
+		};
+		52FC8573266672390083B06C /* Profile */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			path = Profile;
 			sourceTree = "<group>";
 		};
-		5208188C26651C7600BCC909 /* Room */ = {
+		52FC8574266672390083B06C /* Live */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			path = Room;
+			path = Live;
+			sourceTree = "<group>";
+		};
+		52FC8575266672390083B06C /* Main */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Main;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -288,12 +308,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52FC8578266672BB0083B06C /* Home.storyboard in Resources */,
 				5201E30126633497009D874E /* LaunchScreen.storyboard in Resources */,
+				52FC8581266673B30083B06C /* Profile.storyboard in Resources */,
 				5208189026651D8800BCC909 /* APP框架记录.md in Resources */,
 				5201E2FE26633497009D874E /* Assets.xcassets in Resources */,
 				5201E2FC2663348F009D874E /* Main.storyboard in Resources */,
 				5208189226651D9100BCC909 /* 获取斗鱼IPA图片资源.md in Resources */,
+				52FC857B2666730A0083B06C /* Live.storyboard in Resources */,
 				5208188E26651D6E00BCC909 /* github命令使用.md in Resources */,
+				52FC857E266673280083B06C /* Follow.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -370,6 +394,38 @@
 				5201E30026633497009D874E /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		52FC8576266672BB0083B06C /* Home.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				52FC8577266672BB0083B06C /* Base */,
+			);
+			name = Home.storyboard;
+			sourceTree = "<group>";
+		};
+		52FC85792666730A0083B06C /* Live.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				52FC857A2666730A0083B06C /* Base */,
+			);
+			name = Live.storyboard;
+			sourceTree = "<group>";
+		};
+		52FC857C266673280083B06C /* Follow.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				52FC857D266673280083B06C /* Base */,
+			);
+			name = Follow.storyboard;
+			sourceTree = "<group>";
+		};
+		52FC857F266673B30083B06C /* Profile.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				52FC8580266673B30083B06C /* Base */,
+			);
+			name = Profile.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

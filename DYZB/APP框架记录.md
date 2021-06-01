@@ -9,9 +9,11 @@ Editor->Embedin->Navigation Controller分别添加两个默认的，其它两个
 
 1.4 IOS9.0 以上才支持 Refactor to StoryBoard方法 如果Main.stroyBoard太多控制器，会显得不好管理，则把他们进一步分离，方法如下：
 同时选择上NavigationController与它对应的ViewController ，然后在菜单栏Editor->Refactor to Storyboard,生成一个新的StoryBoard.
-同样的方法生成另外三个StoryBoard
-为了适应 9.0以下的系统 ，则生成上面4个StoryBoard后，删除
+同样的方法生成另外三个StoryBoard,保存路径为：Base.lproj文件夹中
+为了适应 9.0以下的系统 ，则生成上面4个StoryBoard后.要使用代码来加载。
+
 
 
 
 2.添加图片包，点击Assets.xcassets资源文件夹后，从示例工程中直接把图片文件夹拖进来，如Tabbar里面的图片
+3.往工程添加文件夹划分，首先在本地的工程目录划分好，然后把目录拖进工程里，要选择 Copy items if needed 与 Create groups.
