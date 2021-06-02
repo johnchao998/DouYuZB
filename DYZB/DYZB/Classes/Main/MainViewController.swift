@@ -12,6 +12,7 @@ class MainViewController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        /**通过 storyboard添加控制器*/
         addChildVC(storyName:"Home")
         addChildVC(storyName:"Live")
         addChildVC(storyName:"Follow")

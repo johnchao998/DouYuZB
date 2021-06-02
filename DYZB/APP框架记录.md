@@ -18,3 +18,13 @@ Editor->Embedin->Navigation Controller分别添加两个默认的，其它两个
 
 2.添加图片包，点击Assets.xcassets资源文件夹后，从示例工程中直接把图片文件夹拖进来，如Tabbar里面的图片
 3.往工程添加文件夹划分，首先在本地的工程目录划分好，然后把目录拖进工程里，要选择 Copy items if needed 与 Create groups.
+
+
+3.添加Home的导航栏按键
+3.0 新建一个 HomeViewController类，把此类关联到 Home.storyboard中。
+3.1 先扩展一个 UIBarButtonItem 类，参见代码
+3.2.1 封装 PageTitileView 
+
+
+3.2.2 封装 PageContentView
+3.2.3 处理 PageTitileView & PageContentView的逻辑

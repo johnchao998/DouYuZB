@@ -17,6 +17,10 @@
 		5208188E26651D6E00BCC909 /* github命令使用.md in Resources */ = {isa = PBXBuildFile; fileRef = 5208188D26651D6E00BCC909 /* github命令使用.md */; };
 		5208189026651D8800BCC909 /* APP框架记录.md in Resources */ = {isa = PBXBuildFile; fileRef = 5208188F26651D8800BCC909 /* APP框架记录.md */; };
 		5208189226651D9100BCC909 /* 获取斗鱼IPA图片资源.md in Resources */ = {isa = PBXBuildFile; fileRef = 5208189126651D9100BCC909 /* 获取斗鱼IPA图片资源.md */; };
+		529A01A42667C30B00D65D3A /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529A01A32667C30B00D65D3A /* HomeViewController.swift */; };
+		529A01A82667CF5100D65D3A /* UIBarButtonItem+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529A01A72667CF5100D65D3A /* UIBarButtonItem+Extension.swift */; };
+		529A01AB2667D87400D65D3A /* PageTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529A01AA2667D87400D65D3A /* PageTitleView.swift */; };
+		529A01AD2667DA0200D65D3A /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529A01AC2667DA0200D65D3A /* Common.swift */; };
 		52FC8578266672BB0083B06C /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52FC8576266672BB0083B06C /* Home.storyboard */; };
 		52FC857B2666730A0083B06C /* Live.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52FC85792666730A0083B06C /* Live.storyboard */; };
 		52FC857E266673280083B06C /* Follow.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52FC857C266673280083B06C /* Follow.storyboard */; };
@@ -58,6 +62,10 @@
 		5208188D26651D6E00BCC909 /* github命令使用.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = "github命令使用.md"; sourceTree = SOURCE_ROOT; };
 		5208188F26651D8800BCC909 /* APP框架记录.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = "APP框架记录.md"; sourceTree = SOURCE_ROOT; };
 		5208189126651D9100BCC909 /* 获取斗鱼IPA图片资源.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = "获取斗鱼IPA图片资源.md"; sourceTree = SOURCE_ROOT; };
+		529A01A32667C30B00D65D3A /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		529A01A72667CF5100D65D3A /* UIBarButtonItem+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+Extension.swift"; sourceTree = "<group>"; };
+		529A01AA2667D87400D65D3A /* PageTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageTitleView.swift; sourceTree = "<group>"; };
+		529A01AC2667DA0200D65D3A /* Common.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
 		52FC8577266672BB0083B06C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = DYZB/Base.lproj/Home.storyboard; sourceTree = "<group>"; };
 		52FC857A2666730A0083B06C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = DYZB/Base.lproj/Live.storyboard; sourceTree = "<group>"; };
 		52FC857D266673280083B06C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = DYZB/Base.lproj/Follow.storyboard; sourceTree = "<group>"; };
@@ -96,7 +104,6 @@
 				52FC857F266673B30083B06C /* Profile.storyboard */,
 				52FC857C266673280083B06C /* Follow.storyboard */,
 				52FC85792666730A0083B06C /* Live.storyboard */,
-				52FC8576266672BB0083B06C /* Home.storyboard */,
 				5201E2F32663348F009D874E /* DYZB */,
 				5201E30A26633497009D874E /* DYZBTests */,
 				5201E31526633497009D874E /* DYZBUITests */,
@@ -149,9 +156,58 @@
 			path = DYZBUITests;
 			sourceTree = "<group>";
 		};
+		529A01A02667C1FC00D65D3A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				52FC8576266672BB0083B06C /* Home.storyboard */,
+				529A01A32667C30B00D65D3A /* HomeViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		529A01A12667C21000D65D3A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		529A01A22667C24300D65D3A /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		529A01A52667CE9F00D65D3A /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				529A01A62667CEA500D65D3A /* Extension */,
+				529A01AC2667DA0200D65D3A /* Common.swift */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		529A01A62667CEA500D65D3A /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				529A01A72667CF5100D65D3A /* UIBarButtonItem+Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		529A01A92667D84100D65D3A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				529A01AA2667D87400D65D3A /* PageTitleView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		52FC858826667B410083B06C /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				529A01A52667CE9F00D65D3A /* Tools */,
 				52FC858D26667B820083B06C /* Profile */,
 				52FC858C26667B790083B06C /* Follow */,
 				52FC858B26667B710083B06C /* Live */,
@@ -164,6 +220,7 @@
 		52FC858926667B5B0083B06C /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				529A01A92667D84100D65D3A /* View */,
 				52FC859026667FE80083B06C /* MainViewController.swift */,
 			);
 			path = Main;
@@ -172,6 +229,9 @@
 		52FC858A26667B6B0083B06C /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				529A01A22667C24300D65D3A /* View */,
+				529A01A12667C21000D65D3A /* Model */,
+				529A01A02667C1FC00D65D3A /* Controller */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -334,9 +394,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				529A01AB2667D87400D65D3A /* PageTitleView.swift in Sources */,
 				5201E2F52663348F009D874E /* AppDelegate.swift in Sources */,
 				5201E2F72663348F009D874E /* SceneDelegate.swift in Sources */,
+				529A01A82667CF5100D65D3A /* UIBarButtonItem+Extension.swift in Sources */,
 				52FC859126667FE80083B06C /* MainViewController.swift in Sources */,
+				529A01A42667C30B00D65D3A /* HomeViewController.swift in Sources */,
+				529A01AD2667DA0200D65D3A /* Common.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
