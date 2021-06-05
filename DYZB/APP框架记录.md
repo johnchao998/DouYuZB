@@ -24,7 +24,12 @@ Editor->Embedin->Navigation Controller分别添加两个默认的，其它两个
 3.0 新建一个 HomeViewController类，把此类关联到 Home.storyboard中。
 3.1 先扩展一个 UIBarButtonItem 类，参见代码
 3.2.1 封装 PageTitileView 
-
+自定义View,并且自定义构造函数
+添加子控件：1>UIScrollView 2>设置TitleLabel 3>设置顶部的线段
 
 3.2.2 封装 PageContentView
+自定义View,并且自定义构造函数
+添加子控件：1>UICollectionView 2>给UICollectionView设置内容
+
 3.2.3 处理 PageTitileView & PageContentView的逻辑
+1.PageTitleView中发生点击

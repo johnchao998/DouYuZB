@@ -17,6 +17,8 @@
 		5208188E26651D6E00BCC909 /* github命令使用.md in Resources */ = {isa = PBXBuildFile; fileRef = 5208188D26651D6E00BCC909 /* github命令使用.md */; };
 		5208189026651D8800BCC909 /* APP框架记录.md in Resources */ = {isa = PBXBuildFile; fileRef = 5208188F26651D8800BCC909 /* APP框架记录.md */; };
 		5208189226651D9100BCC909 /* 获取斗鱼IPA图片资源.md in Resources */ = {isa = PBXBuildFile; fileRef = 5208189126651D9100BCC909 /* 获取斗鱼IPA图片资源.md */; };
+		525C0E03266B5FAC00D2A637 /* PageContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525C0E02266B5FAC00D2A637 /* PageContentView.swift */; };
+		525C0E05266B624900D2A637 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525C0E04266B624900D2A637 /* UIColor+Extension.swift */; };
 		529A01A42667C30B00D65D3A /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529A01A32667C30B00D65D3A /* HomeViewController.swift */; };
 		529A01A82667CF5100D65D3A /* UIBarButtonItem+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529A01A72667CF5100D65D3A /* UIBarButtonItem+Extension.swift */; };
 		529A01AB2667D87400D65D3A /* PageTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529A01AA2667D87400D65D3A /* PageTitleView.swift */; };
@@ -62,6 +64,8 @@
 		5208188D26651D6E00BCC909 /* github命令使用.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = "github命令使用.md"; sourceTree = SOURCE_ROOT; };
 		5208188F26651D8800BCC909 /* APP框架记录.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = "APP框架记录.md"; sourceTree = SOURCE_ROOT; };
 		5208189126651D9100BCC909 /* 获取斗鱼IPA图片资源.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = "获取斗鱼IPA图片资源.md"; sourceTree = SOURCE_ROOT; };
+		525C0E02266B5FAC00D2A637 /* PageContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageContentView.swift; sourceTree = "<group>"; };
+		525C0E04266B624900D2A637 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		529A01A32667C30B00D65D3A /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		529A01A72667CF5100D65D3A /* UIBarButtonItem+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+Extension.swift"; sourceTree = "<group>"; };
 		529A01AA2667D87400D65D3A /* PageTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageTitleView.swift; sourceTree = "<group>"; };
@@ -192,6 +196,7 @@
 			isa = PBXGroup;
 			children = (
 				529A01A72667CF5100D65D3A /* UIBarButtonItem+Extension.swift */,
+				525C0E04266B624900D2A637 /* UIColor+Extension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -199,6 +204,7 @@
 		529A01A92667D84100D65D3A /* View */ = {
 			isa = PBXGroup;
 			children = (
+				525C0E02266B5FAC00D2A637 /* PageContentView.swift */,
 				529A01AA2667D87400D65D3A /* PageTitleView.swift */,
 			);
 			path = View;
@@ -397,6 +403,8 @@
 				529A01AB2667D87400D65D3A /* PageTitleView.swift in Sources */,
 				5201E2F52663348F009D874E /* AppDelegate.swift in Sources */,
 				5201E2F72663348F009D874E /* SceneDelegate.swift in Sources */,
+				525C0E05266B624900D2A637 /* UIColor+Extension.swift in Sources */,
+				525C0E03266B5FAC00D2A637 /* PageContentView.swift in Sources */,
 				529A01A82667CF5100D65D3A /* UIBarButtonItem+Extension.swift in Sources */,
 				52FC859126667FE80083B06C /* MainViewController.swift in Sources */,
 				529A01A42667C30B00D65D3A /* HomeViewController.swift in Sources */,
