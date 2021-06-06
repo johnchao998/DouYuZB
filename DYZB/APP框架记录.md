@@ -31,5 +31,12 @@ Editor->Embedin->Navigation Controller分别添加两个默认的，其它两个
 自定义View,并且自定义构造函数
 添加子控件：1>UICollectionView 2>给UICollectionView设置内容
 
-3.2.3 处理 PageTitileView & PageContentView的逻辑
-1.PageTitleView中发生点击
+3.3.3 处理 PageTitileView & PageContentView的逻辑
+1.PageTitleView中发生点击事件传递给PageContentView进行联动
+2.同样PageContentView滚动的事件也传递给PageTitleView进行联动
+
+
+3.4创建推荐控制器RecomendViewController : UIViewController
+1.添加 UICollectionViewFlowLayout 与 UICollectionView布局资源
+2.自定义CollectionHeaderView : UICollectionReusableView + storyboard.xib资源
+

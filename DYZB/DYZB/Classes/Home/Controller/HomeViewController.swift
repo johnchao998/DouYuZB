@@ -22,12 +22,14 @@ class HomeViewController: UIViewController {
     
     private lazy var pageContenView : PageContentView = {[weak self] in
         //确定内容的frame
-        let contentH = kScreenH - kStatusBarH - kNavigationBarH - kTitleViewH
+        let contentH = kScreenH - kStatusBarH - kNavigationBarH - kTitleViewH - kTabBarH
         let contenFrame = CGRect(x: 0, y: kStatusBarH + kNavigationBarH + kTitleViewH, width: kScreenW, height: contentH)
         
         //确定所有的子控制器
         var childVcs = [UIViewController]()  //控制器数组
-        for _ in 0..<4 {
+        var recomendVC = RecomendViewController()
+        childVcs.append(recomendVC)
+        for _ in 0..<3 {
             let vc = UIViewController()
             vc.view.backgroundColor = UIColor(r: CGFloat(arc4random_uniform(255)),g:CGFloat(arc4random_uniform(255)),b:CGFloat(arc4random_uniform(255)))
             childVcs.append(vc)
@@ -88,6 +90,7 @@ extension HomeViewController{
 
 //MARK:- 遵守PageTitleViewDelegate协议
 extension HomeViewController : PageTitleViewDelegate{
+    //1.当TitleLabel点击时，相应的pageContenView也跟着联动
     func pageTitleView(titleView: PageTitleView, selectedIndex index: Int) {
         pageContenView.setCurrentIndex(currentIndex: index)
     }
@@ -95,6 +98,7 @@ extension HomeViewController : PageTitleViewDelegate{
 
 //MAR:- 遵守PageContenViewDelegate协议
 extension HomeViewController : PageContentViewDelegate{
+    //1.当滑动pageContentView是，TitleLabel也跟着联动
     func pageContentView(contentView: PageContentView, progress: CGFloat, sourceIndex: Int, targetIndex: Int){
         pageTitleView.setTitleWithProgress(progress: progress, sourceIndex: sourceIndex, targetIndex: targetIndex)
     }

@@ -27,7 +27,7 @@ class PageContentView: UIView {
     //添加懒加载属性
     private lazy var collectionView : UICollectionView = {[weak self] in
         
-        //1.创建layout
+        //1.创建layout,装载UIViewController控制器
         let layout = UICollectionViewFlowLayout()
         layout.itemSize = (self?.bounds.size)!   //强制解包
         layout.minimumLineSpacing = 0
@@ -36,8 +36,8 @@ class PageContentView: UIView {
         
         //2.创建collectionView
         let collectionView = UICollectionView(frame: CGRect.zero,collectionViewLayout: layout)
-        collectionView.showsHorizontalScrollIndicator = false
-        collectionView.isPagingEnabled = true
+        collectionView.showsHorizontalScrollIndicator = false  //不显示自带的滚动指示条
+        collectionView.isPagingEnabled = true        //启用翻页滚动
         collectionView.bounces = false
         collectionView.dataSource = self
         collectionView.delegate = self
