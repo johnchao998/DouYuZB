@@ -24,6 +24,8 @@
 		52560391266CBBD900D4F2AA /* CollectionNormalCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5256038F266CBBD900D4F2AA /* CollectionNormalCell.xib */; };
 		525C0E03266B5FAC00D2A637 /* PageContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525C0E02266B5FAC00D2A637 /* PageContentView.swift */; };
 		525C0E05266B624900D2A637 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525C0E04266B624900D2A637 /* UIColor+Extension.swift */; };
+		5284BE272678F1D800F09921 /* CollectionPrettyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5284BE252678F1D800F09921 /* CollectionPrettyCell.swift */; };
+		5284BE282678F1D800F09921 /* CollectionPrettyCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5284BE262678F1D800F09921 /* CollectionPrettyCell.xib */; };
 		529A01A42667C30B00D65D3A /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529A01A32667C30B00D65D3A /* HomeViewController.swift */; };
 		529A01A82667CF5100D65D3A /* UIBarButtonItem+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529A01A72667CF5100D65D3A /* UIBarButtonItem+Extension.swift */; };
 		529A01AB2667D87400D65D3A /* PageTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529A01AA2667D87400D65D3A /* PageTitleView.swift */; };
@@ -76,6 +78,8 @@
 		5256038F266CBBD900D4F2AA /* CollectionNormalCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionNormalCell.xib; sourceTree = "<group>"; };
 		525C0E02266B5FAC00D2A637 /* PageContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageContentView.swift; sourceTree = "<group>"; };
 		525C0E04266B624900D2A637 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		5284BE252678F1D800F09921 /* CollectionPrettyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionPrettyCell.swift; sourceTree = "<group>"; };
+		5284BE262678F1D800F09921 /* CollectionPrettyCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionPrettyCell.xib; sourceTree = "<group>"; };
 		529A01A32667C30B00D65D3A /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		529A01A72667CF5100D65D3A /* UIBarButtonItem+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+Extension.swift"; sourceTree = "<group>"; };
 		529A01AA2667D87400D65D3A /* PageTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageTitleView.swift; sourceTree = "<group>"; };
@@ -221,6 +225,8 @@
 				529A01AA2667D87400D65D3A /* PageTitleView.swift */,
 				5256038E266CBBD900D4F2AA /* CollectionNormalCell.swift */,
 				5256038F266CBBD900D4F2AA /* CollectionNormalCell.xib */,
+				5284BE252678F1D800F09921 /* CollectionPrettyCell.swift */,
+				5284BE262678F1D800F09921 /* CollectionPrettyCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -383,6 +389,7 @@
 			files = (
 				52FC8578266672BB0083B06C /* Home.storyboard in Resources */,
 				5201E30126633497009D874E /* LaunchScreen.storyboard in Resources */,
+				5284BE282678F1D800F09921 /* CollectionPrettyCell.xib in Resources */,
 				52560391266CBBD900D4F2AA /* CollectionNormalCell.xib in Resources */,
 				52FC8581266673B30083B06C /* Profile.storyboard in Resources */,
 				5208189026651D8800BCC909 /* APP框架记录.md in Resources */,
@@ -427,6 +434,7 @@
 				529A01A82667CF5100D65D3A /* UIBarButtonItem+Extension.swift in Sources */,
 				52FC859126667FE80083B06C /* MainViewController.swift in Sources */,
 				529A01A42667C30B00D65D3A /* HomeViewController.swift in Sources */,
+				5284BE272678F1D800F09921 /* CollectionPrettyCell.swift in Sources */,
 				52560390266CBBD900D4F2AA /* CollectionNormalCell.swift in Sources */,
 				529A01AD2667DA0200D65D3A /* Common.swift in Sources */,
 			);
