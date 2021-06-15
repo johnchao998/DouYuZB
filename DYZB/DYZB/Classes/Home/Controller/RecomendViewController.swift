@@ -31,16 +31,21 @@ class RecomendViewController: UIViewController {
         collectionView.dataSource = self
         //设置collecionView随父控制拉伸
         collectionView.autoresizingMask = [.flexibleHeight,.flexibleHeight]
-        //注册cell
-        collectionView.register(UICollectionViewCell.self, forCellWithReuseIdentifier: kNormalCellID)
-       
-        /*
-        //注册每一组 HeaderView  普通注册方法
-        collectionView.register(UICollectionReusableView.self, forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: kHeaderViewID)
-         */
         
-        /*自定义方法，从xib资源加载*/
+        
+            /*普通注册cell方法**/
+//            collectionView.register(UICollectionViewCell.self, forCellWithReuseIdentifier: kNormalCellID)
+
+        /**自定义cell注册方法 NormalCell从xib资源加载*/
+        collectionView.register(UINib(nibName: "CollectionNormalCell", bundle: nil), forCellWithReuseIdentifier: kNormalCellID)
+        /*
+            //注册每一组 HeaderView  普通注册方法
+            collectionView.register(UICollectionReusableView.self, forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: kHeaderViewID)
+            */
+        
+        /*自定义HeaderView，从xib资源加载*/
         collectionView.register(UINib(nibName: "CollectionHeaderView", bundle: nil), forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: kHeaderViewID)
+        
        
         return collectionView
     }()
@@ -70,7 +75,7 @@ extension RecomendViewController : UICollectionViewDataSource{
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        if section == 0 {
+        if section == 0 {//section=0返回 8 个cell
             return 8
         }
         return 4
@@ -80,7 +85,7 @@ extension RecomendViewController : UICollectionViewDataSource{
         //1.获取Cell
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: kNormalCellID, for: indexPath)
         
-        cell.backgroundColor = UIColor.red
+        //cell.backgroundColor = UIColor.red
         
         return cell
     }

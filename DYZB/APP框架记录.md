@@ -39,4 +39,7 @@ Editor->Embedin->Navigation Controller分别添加两个默认的，其它两个
 3.4创建推荐控制器RecomendViewController : UIViewController
 1.添加 UICollectionViewFlowLayout 与 UICollectionView布局资源
 2.自定义CollectionHeaderView : UICollectionReusableView + storyboard.xib资源
+3.创建xib自定义CollectionNormalCell: UICollectionViewCell 
+storyboard.xib资源。主要各控制的约束设置详情，如还没有下载到图片时的default图片，在属性中加入圆角 layer.cornerRadius = 5 与超出部分进行裁剪 layer.masksToBounds = true  和 UIImage Mode content mode: scale to fill
+
 
