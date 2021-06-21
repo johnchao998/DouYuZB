@@ -17,6 +17,8 @@ private let kHeaderViewID = "kHeaderViewID"  //自定义SectionHeaderView
 private let kHeaderViewH : CGFloat = 50
 class RecomendViewController: UIViewController {
     //MARK:-懒加载属性
+    /**MVVM设计模式，创建ViewModel负责网络请求数据*/
+    private lazy var recommendVM : RecommendViewModel = RecommendViewModel()
     private lazy var collectionView : UICollectionView = {[unowned self] in
         //1.创建布局
         let layout = UICollectionViewFlowLayout()
@@ -49,7 +51,7 @@ class RecomendViewController: UIViewController {
             */
         
         /*自定义HeaderView，从xib资源加载*/
-        collectionView.register(UINib(nibName: "CollectionHeaderView", bundle: nil), forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: kHeaderViewID)
+        collectionView.register(UINib(nibName: "CollectionHeaderViewEx", bundle: nil), forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: kHeaderViewID)
         
        
         return collectionView
@@ -58,9 +60,11 @@ class RecomendViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        
         // 设置UI
         setupUI()
+        
+        //网络请求
+        loadData()
     }
 
 }
@@ -73,17 +77,29 @@ extension RecomendViewController{
     }
 }
 
+//MARK:请求数据
+extension RecomendViewController{
+    private func loadData(){
+        recommendVM.requestData {
+            //请求到数据后，重新加载数据
+            self.collectionView.reloadData()
+        }
+    }
+}
+
 //MARK:-遵守UICollectionViewDataSource协议
 extension RecomendViewController : UICollectionViewDataSource,UICollectionViewDelegateFlowLayout{
     func numberOfSections(in collectionView: UICollectionView) -> Int {
-        return 12
+        return recommendVM.anchorGroups.count
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        if section == 0 {//section=0返回 8 个cell
-            return 8
-        }
-        return 4
+//        if section == 0 {//section=0返回 8 个cell
+//            return 8
+//        }
+//        return 4
+        let group = recommendVM.anchorGroups[section]
+        return group.anchors.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -102,8 +118,11 @@ extension RecomendViewController : UICollectionViewDataSource,UICollectionViewDe
     }
     
     func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
-        //1.获取section的HeaderView
-        let headerView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: kHeaderViewID, for: indexPath)
+        //1.获取section的HeaderView  转成自定义 CollectionHeaderViewEx
+        let headerView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: kHeaderViewID, for: indexPath) as! CollectionHeaderViewEx
+        
+        //2.取出模型
+        headerView.group = recommendVM.anchorGroups[indexPath.section]
         
         return headerView
     }

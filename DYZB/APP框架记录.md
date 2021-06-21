@@ -46,4 +46,12 @@ xib约束注意事项：举例
 Label设置圆角与UIImage设置圆角方法一致；
 Label设置半透明，不要设置alpha值，要设置 custom color RGB的透明值；
 
+3.5 pod管理第三方库，使用方法参考github命令作用文档
+
+3.6模型数据MVVM 。网络数据请求封装在 ViewModel类中
+ViewModel数据与Model、View实现分离
+如 RecommendViewModel 与 AnchorGroup&AnchorModel
+
+3.7 CollectionHeaderViewEx.swift与xib控件属性绑定，在xib文件中右键控制拖动指向.swift代码中实现绑定过程 。
+
 
