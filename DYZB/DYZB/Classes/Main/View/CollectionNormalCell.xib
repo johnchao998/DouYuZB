@@ -70,6 +70,12 @@
                 <constraint firstItem="6bp-Q9-SFf" firstAttribute="top" secondItem="9sF-Sj-RFZ" secondAttribute="bottom" constant="5" id="zuA-q0-N0X"/>
             </constraints>
             <size key="customSize" width="316" height="188"/>
+            <connections>
+                <outlet property="iconImageView" destination="9sF-Sj-RFZ" id="FNL-7g-Hxq"/>
+                <outlet property="nickNameLabel" destination="xVK-uE-ABX" id="Lfi-zo-Nfd"/>
+                <outlet property="onlineBtn" destination="KFH-up-MLn" id="id0-8e-cfK"/>
+                <outlet property="roomNameLabel" destination="6bp-Q9-SFf" id="lbm-9v-rcI"/>
+            </connections>
             <point key="canvasLocation" x="-314.49275362318843" y="-2.6785714285714284"/>
         </collectionViewCell>
     </objects>

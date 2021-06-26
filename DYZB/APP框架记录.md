@@ -54,4 +54,12 @@ ViewModel数据与Model、View实现分离
 
 3.7 CollectionHeaderViewEx.swift与xib控件属性绑定，在xib文件中右键控制拖动指向.swift代码中实现绑定过程 。
 
+3.8 CollectionNormalCell&CollectionPrettyCell抽取共同属性类
+CollectionBaseCell.子类属性监控器把模型设置给父类
+
+3.9轮播控件,首先创建RecomdCycleView: UIView,其次创建RecomdCycleView.xib文件关联到类RecomdCycleView
+在xib文件中添加UICollectionView 与 UIPageController
+把UICollecitonView 的dataSource关联到RecomdCycleView。
+最后在RecomdCycleView实现数据源协议
+
 

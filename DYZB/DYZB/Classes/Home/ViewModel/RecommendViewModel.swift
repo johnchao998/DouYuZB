@@ -12,6 +12,7 @@ class RecommendViewModel {
     //MARK:- 懒加载属性 主播数组
     //提供给外部使用，不要private
     lazy var anchorGroups : [AnchorGroup] = [AnchorGroup]()
+    lazy var cycleModels : [CycleModel] = [CycleModel]()
     private lazy var bigDataGroups : AnchorGroup = AnchorGroup()
     private lazy var prettyGroups : AnchorGroup = AnchorGroup()
 }
@@ -130,6 +131,26 @@ extension RecommendViewModel{
             //回调外部函数
             finishCallback()
         }
-        
+    }
+    
+    //轮播数据请求完成后，回调闭包函数
+    func requestCycleData(_ finishCallback : @escaping () -> ()){
+        NetWorkRequest.sharedInstance.requestData(.get,URLString: "http://www.douyutv.com/api/v1/slide/6",parameters: ["version" : "2.300"]){
+            (result) in
+            
+            //1.获取整体字典数据
+            guard let resultDict = result as? [String : NSObject] else { return }
+            
+            //2.根据data的key获取数据
+            guard let dataArray = resultDict["data"] as? [[String : NSObject]] else { return }
+            
+            //3.字典转换模型对象
+            for dict in dataArray {
+                self.cycleModels.append(CycleModel(dict : dict))
+               // print(dict)
+            }
+            
+            finishCallback()
+        }
     }
 }
